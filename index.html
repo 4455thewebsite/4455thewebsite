@@ -12,82 +12,28 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#game1">Game 1</a></li>
-            <li><a href="#game2">Game 2</a></li>
-            <li><a href="#game3">Game 3</a></li>
-            <li><a href="#game4">Game 4</a></li>
-            <li><a href="#game5">Game 5</a></li>
-            <li><a href="#game6">Game 6</a></li>
-            <li><a href="#game7">Game 7</a></li>
-            <li><a href="#game8">Game 8</a></li>
-            <li><a href="#game9">Game 9</a></li>
-            <li><a href="#game10">Game 10</a></li>
-            <li><a href="#game11">Game 11</a></li>
-            <li><a href="#game12">Game 12</a></li>
+            <!-- Generate game list dynamically -->
+            <script>
+                for (let i = 1; i <= 100; i++) {
+                    document.write('<li><a href="#game' + i + '">Game ' + i + '</a></li>');
+                }
+            </script>
         </ul>
     </nav>
-    <section id="game1" class="game-section">
-        <h2>Game 1</h2>
-        <p>Description of Game 1 goes here.</p>
-        <button>Play Game 1</button>
-    </section>
-    <section id="game2" class="game-section">
-        <h2>Game 2</h2>
-        <p>Description of Game 2 goes here.</p>
-        <button>Play Game 2</button>
-    </section>
-    <section id="game3" class="game-section">
-        <h2>Game 3</h2>
-        <p>Description of Game 3 goes here.</p>
-        <button>Play Game 3</button>
-    </section>
-    <section id="game4" class="game-section">
-        <h2>Game 4</h2>
-        <p>Description of Game 4 goes here.</p>
-        <button>Play Game 4</button>
-    </section>
-    <section id="game5" class="game-section">
-        <h2>Game 5</h2>
-        <p>Description of Game 5 goes here.</p>
-        <button>Play Game 5</button>
-    </section>
-    <section id="game6" class="game-section">
-        <h2>Game 6</h2>
-        <p>Description of Game 6 goes here.</p>
-        <button>Play Game 6</button>
-    </section>
-    <section id="game7" class="game-section">
-        <h2>Game 7</h2>
-        <p>Description of Game 7 goes here.</p>
-        <button>Play Game 7</button>
-    </section>
-    <section id="game8" class="game-section">
-        <h2>Game 8</h2>
-        <p>Description of Game 8 goes here.</p>
-        <button>Play Game 8</button>
-    </section>
-    <section id="game9" class="game-section">
-        <h2>Game 9</h2>
-        <p>Description of Game 9 goes here.</p>
-        <button>Play Game 9</button>
-    </section>
-    <section id="game10" class="game-section">
-        <h2>Game 10</h2>
-        <p>Description of Game 10 goes here.</p>
-        <button>Play Game 10</button>
-    </section>
-    <section id="game11" class="game-section">
-        <h2>Game 11</h2>
-        <p>Description of Game 11 goes here.</p>
-        <button>Play Game 11</button>
-    </section>
-    <section id="game12" class="game-section">
-        <h2>Game 12</h2>
-        <p>Description of Game 12 goes here.</p>
-        <button>Play Game 12</button>
-    </section>
+
+    <!-- Generate game sections dynamically -->
+    <script>
+        for (let i = 1; i <= 100; i++) {
+            document.write('<section id="game' + i + '" class="game-section">');
+            document.write('<h2>Game ' + i + '</h2>');
+            document.write('<p>Description of Game ' + i + ' goes here.</p>');
+            document.write('<button>Play Game ' + i + '</button>');
+            document.write('</section>');
+        }
+    </script>
+
     <footer>
-        <p>&copy; 2023 4455</p>
+        <p>&copy; 2023 Modern Games Website</p>
     </footer>
 </body>
 </html>
