@@ -1,5 +1,5 @@
 /* Reset some default styles for better consistency */
-body, h1, h2, h3, p, button {
+body, h1, h2, h3, p, ul, li, button {
     margin: 0;
     padding: 0;
 }
@@ -10,6 +10,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+    margin: 0;
 }
 
 /* Header styles */
@@ -31,26 +32,36 @@ nav {
     padding: 0.5rem 0;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
     margin: 0 10px;
 }
 
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Section styles */
-section {
+.game-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 5px #ddd;
 }
 
 /* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 0;
     text-align: center;
+    padding: 10px 0;
 }
 
 /* Button styles */
@@ -72,10 +83,8 @@ button:hover {
 
 /* Responsive styles */
 @media screen and (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-    nav a {
-        margin: 5px 0;
+    nav li {
+        display: block;
+        margin: 10px 0;
     }
 }
